@@ -74,6 +74,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A25370152705098400F1EB0D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A25370162705099100F1EB0D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A253701D27050AE500F1EB0D /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A2537017270509B200F1EB0D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A2B69CE92704A25800FA3937 /* AppDelegate.swift */,
+				A2B69CEB2704A25800FA3937 /* SceneDelegate.swift */,
+				A2B69CF22704A26700FA3937 /* Assets.xcassets */,
+				A2B69CF42704A26700FA3937 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A2537018270509EA00F1EB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A253701C27050A1F00F1EB0D /* Custom */,
+				A253701B27050A1000F1EB0D /* Screens */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2537019270509F400F1EB0D /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		A253701A27050A0000F1EB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A253701B27050A1000F1EB0D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A2B69CED2704A25800FA3937 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A253701C27050A1F00F1EB0D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		A253701D27050AE500F1EB0D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A2B69CDD2704A25800FA3937 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +168,12 @@
 		A2B69CE82704A25800FA3937 /* NYTNews */ = {
 			isa = PBXGroup;
 			children = (
-				A2B69CE92704A25800FA3937 /* AppDelegate.swift */,
-				A2B69CEB2704A25800FA3937 /* SceneDelegate.swift */,
-				A2B69CED2704A25800FA3937 /* ViewController.swift */,
-				A2B69CF22704A26700FA3937 /* Assets.xcassets */,
-				A2B69CF42704A26700FA3937 /* LaunchScreen.storyboard */,
+				A253701A27050A0000F1EB0D /* Model */,
+				A2537019270509F400F1EB0D /* ModelView */,
+				A2537018270509EA00F1EB0D /* View */,
+				A25370152705098400F1EB0D /* Manager */,
+				A2537017270509B200F1EB0D /* Support */,
+				A25370162705099100F1EB0D /* Utilities */,
 				A2B69CF72704A26700FA3937 /* Info.plist */,
 			);
 			path = NYTNews;
