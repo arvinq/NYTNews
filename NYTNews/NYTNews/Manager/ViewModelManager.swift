@@ -46,6 +46,7 @@ class ViewModelManager {
         self.networkManager = networkManager
     }
     
+    /// entry point of the request. This will populate our cells view model list and article list. This will also trigger some binded objects to trigger an update in our view
     func getArticles(on page: Int, hasMoreArticles: Bool) {
         self.isLoading = true
         self.networkManager.getNews(onPage: page) { [weak self] result in
@@ -70,6 +71,8 @@ class ViewModelManager {
         }
     }
     
+    
+    /// create article info view model object from the correct article by comparing the tapped cell's slug information
     func getArticleInfo(for articleViewModel: ArticleCellViewModel) {
         guard let article = self.articles.filter({ $0.slugName == articleViewModel.slugName }).first else { return }
         

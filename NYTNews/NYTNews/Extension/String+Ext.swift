@@ -9,6 +9,7 @@ import Foundation
 
 extension String {
     
+    /// convert string date to desired date format for output
     func convertDateFormat() -> String {
         let inDateFormatter = DateFormatter()
         inDateFormatter.timeZone = TimeZone.autoupdatingCurrent

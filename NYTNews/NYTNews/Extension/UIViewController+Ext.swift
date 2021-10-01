@@ -27,6 +27,9 @@ extension UIViewController {
         }
     }
     
+    /**
+     * Show safari browser in app using url passed.
+     */
     func presentSafariViewController(with url: URL) {
         let safariViewController = SFSafariViewController(url: url)
         safariViewController.preferredBarTintColor = .white

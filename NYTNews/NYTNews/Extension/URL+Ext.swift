@@ -8,6 +8,7 @@
 import Foundation
 
 extension URL {
+    /// compose url with query parameters using passed key-value pairs
     func withQuery(items: [String: String]) -> URL? {
         var components = URLComponents(url: self, resolvingAgainstBaseURL: true)
         components?.queryItems = items.compactMap { return URLQueryItem(name: $0.key, value: $0.value) }
