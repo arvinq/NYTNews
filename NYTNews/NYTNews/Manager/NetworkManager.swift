@@ -31,6 +31,8 @@ class NetworkManager: NetworkManagerProtocol {
         queryItems["limit"] = "\(limit)"
         queryItems["offset"] = "\(offset)"
         
+        //simulating a lag in request for Network Test
+        // sleep(3)
         
         guard let baseUrl = URL(string: Network.baseUrl),
               let endpoint = baseUrl.withQuery(items: queryItems) else {
